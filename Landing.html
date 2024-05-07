@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                 <li class="dropdown">
+                    <a href="#">Products</a>
+                    <div class="dropdown-content">
+                        <a href="#">Mobiles</a>
+                        <a href="#">Laptops</a>
+                        <a href="#">Smart Tvs</a>
+                    </div>
+                </li>
+                <li><a href="#" onclick="togglePopup('about-us')">About Us</a></li>
+                <li><a href="#" onclick="togglePopup('contact-us')">Contact</a></li>
+            </ul>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-showcase">
+    
+        <h2>Featured Products</h2>
+        <div class="products-container">
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71v2jVh6nIL._SX679_.jpg" alt="Product Image">
+                <h3>Apple iPhone 15 (128 GB) - Pink</h3>
+                <p>DYNAMIC ISLAND COMES TO IPHONE</p>
+                <p>Price:50,000</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._SX679_.jpg" alt="Product Image">
+                <h3>Apple MacBook Air Laptop</h3>
+                <p>All-Day Battery Life – Go longer than ever with up to 18 hours of battery life.</p>
+                <p>Price: 79,990</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/81CgtwSII3L._SL1500_.jpg" alt="Product Image">
+                <h3>Apple iPhone 15 Pro (256 GB) - Natural Titanium</h3>
+                <p>ADVANCED DISPLAY </p>
+                <p>Price: 1,37,990</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="products-container">
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/61sRKTAfrhL._SX679_.jpg" alt="Product Image">
+                    <h3>Apple AirPods Pro (2nd Generation) with MagSafe Case (USB‑C) ​​​​​​​</h3>
+                    <p>Designed by Apple</p>
+                    <p>Price:18,000</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/31u+KjpAvKL._SX679_.jpg" alt="Product Image">
+                    <h3>Apple EarPods (USB-C) ​​​​​​​</h3>
+                    <p>Adaptive Audio</p>
+                    <p>Price: 1,990</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/81CgtwSII3L._SL1500_.jpg" alt="Product Image">
+                    <h3>Apple iPhone 15 Pro (256 GB) - Natural Titanium</h3>
+                    <p>ADVANCED DISPLAY </p>
+                    <p>Price: 1,37,990</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="products-container">
+                    <div class="product">
+                        <img src="https://m.media-amazon.com/images/I/71v2jVh6nIL._SX679_.jpg" alt="Product Image">
+                        <h3>Apple iPhone 15 (128 GB) - Pink</h3>
+                        <p>DYNAMIC ISLAND COMES TO IPHONE</p>
+                        <p>Price:50,000</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://m.media-amazon.com/images/I/71vFKBpKakL._SX679_.jpg" alt="Product Image">
+                        <h3>Apple MacBook Air Laptop</h3>
+                        <p>All-Day Battery Life – Go longer than ever with up to 18 hours of battery life.</p>
+                        <p>Price: 79,990</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://m.media-amazon.com/images/I/81CgtwSII3L._SL1500_.jpg" alt="Product Image">
+                        <h3>Apple iPhone 15 Pro (256 GB) - Natural Titanium</h3>
+                        <p>ADVANCED DISPLAY </p>
+                        <p>Price: 1,37,990</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    
+        </div>
+    </section>
+    <div id="about-us" class="popup">
+        <h2>About Us</h2>
+        <p>This is the about us section. We are an e-commerce store specializing in high-quality products.</p>
+        <button onclick="togglePopup('about-us')">Close</button>
+    </div>
+
+    <!-- Contact Popup -->
+    <div id="contact-us" class="popup">
+        <h2>Contact Us</h2>
+        <p>Contact us at shashank@gmail.com or call us at +123456789.</p>
+        <button onclick="togglePopup('contact-us')">Close</button>
+    </div>
+
+    <footer class="fixed-bottom">
+        <p>&copy; 2024 E-Commerce Store. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript function to toggle the visibility of pop-up
+        function togglePopup(popupId) {
+            var popup = document.getElementById(popupId);
+            if (popup.style.display === "block") {
+                popup.style.display = "none";
+            } else {
+                popup.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
